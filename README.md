@@ -26,7 +26,7 @@ section on the Mobile Phones
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [View live site](https://maryam-hytham.github.io/testimonials-grid-section/)
 
 ## My process
 
