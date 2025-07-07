@@ -154,7 +154,7 @@ blockquote {
   main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 288px);
+    grid-template-rows: repeat(2, minmax(288px));
     gap: 2rem;
     grid-template-areas:
       "a a b e"
