@@ -1,0 +1,118 @@
+:root {
+  --Purple_50: hsl(260, 100%, 95%);
+  --Purple_300: hsl(264, 82%, 80%);
+  --Purple_500: hsl(263, 55%, 52%);
+  --White: hsl(0, 0%, 100%);
+  --Grey_100: hsl(214, 17%, 92%);
+  --Grey_200: hsl(0, 0%, 81%);
+  --Grey_300: hsl(215, 10, 67, 100%);
+  --Grey_400: hsl(224, 10%, 45%);
+  --Grey_500: hsl(217, 19%, 35%);
+  --Dark_blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+/*mobile first approach*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f5f6;
+  padding: 4.5rem 2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.card {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 25px 10px 50px rgba(72, 85, 106, 0.2);
+}
+.card header {
+  display: flex;
+  gap: 1rem;
+}
+header img {
+  border-radius: 100%;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--White);
+}
+.status {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #a3aab4;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+blockquote {
+  font-size: 0.8rem;
+  line-height: 140%;
+}
+/*Card a styling*/
+.card.a {
+  background-color: var(--Purple_500);
+  color: var(--White);
+}
+.card.a .status {
+  color: var(--Purple_50);
+}
+.card.a img {
+  border: 2px solid #a775f1;
+}
+.card.a blockquote {
+  color: var(--Purple_50);
+}
+/*Card b styling*/
+.card.b {
+  background-color: var(--Grey_500);
+  color: var(--White);
+}
+.card.b blockquote {
+  color: var(--Grey_100);
+}
+/*Card c styling*/
+.card.c,
+.card.c .name {
+  color: var(--Grey_500);
+}
+.card.c blockquote,
+.card.c .status {
+  color: var(--Grey_400);
+}
+/*Card d styling*/
+.card.d {
+  background-color: var(--Dark_blue);
+  color: var(--White);
+}
+.card.d img {
+  border: 2px solid var(--Purple_500);
+}
+.card.d blockquote {
+  color: var(--Grey_100);
+}
+.card.d h2 {
+  color: var(--Grey_200);
+}
+/*Card e styling*/
+.card.e blockquote {
+  color: var(--Grey_400);
+}
+.card.e h2,
+.card.e .name {
+  color: var(--Grey_500);
+}
+.card.e .status {
+  color: var(--Grey_300);
+}
