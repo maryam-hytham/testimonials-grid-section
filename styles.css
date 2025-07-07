@@ -133,7 +133,7 @@ blockquote {
     grid-template-rows: repeat(4, 1fr);
     gap: 2rem;
   }
-  .card{
+  .card {
     margin: 0;
   }
   .card.a {
@@ -146,9 +146,33 @@ blockquote {
     grid-column: span 2;
   }
 }
+/*desktop*/
 @media screen and (min-width: 56.25rem) {
   body {
     padding: 9rem 8rem;
   }
-
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 288px);
+    gap: 2rem;
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+  }
+  .card.a {
+    grid-area: a;
+  }
+  .card.b {
+    grid-area: b;
+  }
+  .card.c {
+    grid-area: c;
+  }
+  .card.d {
+    grid-area: d;
+  }
+  .card.e {
+    grid-area: e;
+  }
 }
